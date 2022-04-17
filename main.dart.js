@@ -49927,9 +49927,9 @@ FC(){var s,r,q,p
 for(s=$.a9M,r=s.length,q=0,p=0;p<r;++p)q+=s[p]
 return q},
 gXf(){var s=null
-if(this.c>0)return A.rI("images/char/1.png",s,s,s)
-else if($.a6X)return A.rI("images/char/2.png",s,s,s)
-else return A.rI("images/char/3.png",s,s,s)},
+if(this.c>0)return A.rI("assets/images/char/1.png",s,s,s)
+else if($.a6X)return A.rI("assets/images/char/2.png",s,s,s)
+else return A.rI("assets/images/char/3.png",s,s,s)},
 P(a,b){var s,r,q,p,o=this,n=null,m=b.U(t.w).f.a,l=m.b-60,k=A.PV(o.gXf()),j=o.c
 if(j>0)s="\u54fc \u8b93\u4f60\u898b\u8b58\u5230\u9732\u6070\u7684\u53ef\u611b\u4e86\u5427\n"
 else s=$.a6X?"\u4f60\u770b\u770b\u4f60 \u4e0d\u52d9\u6b63\u696d \u9a37\u64fe\u6c34\u737a\n\u592a\u58de\u4e86\u5427\n":"\u4e00\u96bb\u6c34\u737a\u90fd\u6478\u4e0d\u5230 \u597d\u53ef\u6190\u6b50\n"
@@ -56883,7 +56883,7 @@ $.aA=null
 $.a9M=A.b([],t.t)
 $.yj=7
 $.a6G=30
-$.a6W=50
+$.a6W=100
 $.Ln=20
 $.a6X=!1
 $.aeJ=null})();(function lazyInitializers(){var s=hunkHelpers.lazyFinal,r=hunkHelpers.lazy
