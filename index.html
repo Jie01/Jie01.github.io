@@ -15,6 +15,8 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
+  <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
+  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
   <base href="/">
 
   <meta charset="UTF-8">
@@ -28,7 +30,7 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="icons/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -51,15 +53,32 @@
 
   <title>一週年的小遊戲</title>
 
-
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-color: rgba(21, 101, 192, 0.4);
+    }
+  </style>
 </head>
 <body id="app-container">
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
 
+  <div class="loading">
+    <img src="loading.gif">
+    <h1 style="color:#030F36;font-family: Arial, Helvetica, sans-serif;">Loading</h1>
+  </div>
   <script>
-    var serviceWorkerVersion = '54820300';
+    var serviceWorkerVersion = '307331570';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
